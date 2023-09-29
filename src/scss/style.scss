@@ -19,4 +19,8 @@ body {
     row-gap: 2.5rem;
     font-size: 3rem;
     color: $black;
+
+    a {
+        display: block;
+    }
 }
