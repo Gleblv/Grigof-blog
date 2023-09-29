@@ -1,0 +1,16 @@
+.blog-main-image {
+    border-bottom: 0.1rem solid rgba(255, 255, 255, 0.50);
+    margin: 0;
+
+    &__container {
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+    }
+
+    @media (max-width: 48em) {
+        &__container {
+            padding-top: 8rem;
+            padding-bottom: 8rem;
+        }
+    }
+}

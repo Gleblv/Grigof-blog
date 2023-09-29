@@ -1,0 +1,44 @@
+.blog-filtres {
+    font-family: 'Forum';
+    border-bottom: 0.1rem solid rgba(255, 255, 255, 0.50);
+    margin-bottom: 8rem;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5.8rem 15.35rem;
+    }
+
+    &__filter {
+        color: rgba(255, 255, 255, 0.50);
+        text-align: center;
+        font-family: 'Futura PT';
+        font-size: 1.5rem;
+        font-weight: 450;
+        line-height: 2.2rem;
+        letter-spacing: 0.24rem;
+        text-transform: uppercase;
+
+        &:hover {
+            cursor: pointer;
+            color: $white;
+        }
+    }
+
+    @media (max-width: 48em) {
+        margin-bottom: 5rem;
+
+        &__container {
+            flex-direction: column;
+            padding: 9rem 0;
+            row-gap: 7rem;
+        }
+
+        &__filter {
+            font-size: 2.8rem;
+            line-height: 3.6rem;
+            letter-spacing: 0.28rem;
+        }
+    }
+}

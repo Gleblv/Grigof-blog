@@ -1,0 +1,31 @@
+.blog-more-btn {
+    color: $white;
+    font-family: 'Futura PT';
+    font-size: 1.5rem;
+    font-weight: 450;
+    line-height: 2.2rem;
+    letter-spacing: 0.24rem;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+
+    svg {
+        margin: 0 0 0 3.9rem;
+    }
+
+    &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+    @media (max-width: 48em) {
+        font-size: 2.8rem;
+        line-height: 3.6rem;
+        letter-spacing: 0.28rem;
+        text-transform: uppercase;
+
+        svg {
+            margin: 0 0 0 2.4rem;
+        }
+    }
+}

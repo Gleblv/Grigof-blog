@@ -1,0 +1,14 @@
+@import 'set';
+@import 'variables';
+
+@import 'blog-more-btn';
+
+@import 'blog-header';
+@import 'blog-main-image';
+@import 'blog-filtres';
+@import 'blog-list';
+
+body {
+    background-color: $black;
+    color: $white;
+}
