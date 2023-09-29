@@ -8,6 +8,10 @@
 @import 'blog-filtres';
 @import 'blog-list';
 
+@import 'article-header';
+@import 'article-body';
+@import 'article-similar';
+
 body {
     background-color: $black;
     color: $white;

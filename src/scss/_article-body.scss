@@ -1,0 +1,219 @@
+.article-body {
+    font-family: 'Forum';
+
+    &__title {
+        font-size: 4rem;
+        line-height: 115%;
+        letter-spacing: 0.08rem;
+        text-transform: uppercase;
+        max-width: 89rem;
+        margin: 0 auto 4rem auto;
+    }
+
+    &__text {
+        color: rgba(255, 255, 255, 0.50);
+        font-family: 'Futura PT';
+        font-size: 1.9rem;
+        line-height: 2.6rem;
+        max-width: 89rem;
+        margin: 0 auto 10rem auto;
+
+        &:nth-last-child(3) {
+            margin: 0 auto 4rem auto;
+        }
+    }
+
+    &__images-row {
+        display: flex;
+        column-gap: 3rem;
+        margin: 0 0 10rem 0;
+    }
+
+    &__images-item {
+        width: 80.5rem;
+        height: 91rem;
+
+        img {
+            width: 80.5rem;
+            height: 91rem;
+            object-fit: cover;
+        }
+    }
+
+    &__subtitle {
+        font-size: 1.9rem;
+        line-height: 150%;
+        letter-spacing: 0.038rem;
+        text-transform: uppercase;
+        max-width: 89rem;
+        margin: 0 auto 5rem auto;
+    }
+
+    &__image {
+        width: 89.3rem;
+        height: 38.9rem;
+        margin: 0 auto 5rem auto;
+
+        img {
+            width: 89.3rem;
+            height: 38.9rem;
+            object-fit: cover;
+        }
+    }
+
+    &__socials {
+        margin: 0 0 10rem 37.5rem;
+        display: flex;
+        align-items: center;
+
+        &-item {
+            width: 5.3rem;
+            height: 5.3rem;
+            border: 0.1rem solid #fff;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &:not(:last-child) {
+                margin: 0 5rem 0 0;
+            }
+        }
+    }
+
+    &__controlls {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: var(--ffffff, #FFF);
+        font-family: 'Futura PT';
+        font-size: 1.5rem;
+        font-weight: 450;
+        line-height: 2.2rem;
+        letter-spacing: 0.24rem;
+        text-transform: uppercase;
+
+        &-prev,
+        &-next {
+            display: flex;
+            align-items: center;
+
+            div {
+                max-width: 13.7rem;
+            }
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        &-prev {
+            svg {
+                margin: 0 1.2rem 0 0;
+            }
+        }
+
+        &-next {
+            svg {
+                margin: 0 0 0 1.2rem;
+            }
+        }
+    }
+
+    @media (max-width: 48em) {
+        margin: 0 0 24rem 0;
+
+        &__title {
+            font-size: 4.4rem;
+            line-height: 118%;
+            margin: 0 0 6rem 0;
+        }
+
+        &__text {
+            font-size: 3.2rem;
+            line-height: 4.4rem;
+            margin: 0 0 6rem 0;
+
+            &:nth-child(4) {
+                margin: 0 0 11rem 0;
+            }
+
+            &:nth-last-child(3) {
+                margin: 0 0 10rem 0;
+            }
+        }
+
+        &__images-row {
+            column-gap: 4rem;
+            margin: 0 0 7rem 0;
+        }
+
+        &__images-item {
+            width: 31.6rem;
+            height: 36.2rem;
+
+            img {
+                width: 31.6rem;
+                height: 36.2rem;
+            }
+        }
+
+        &__subtitle {
+            font-size: 2.8rem;
+            line-height: 4.4rem;
+            margin: 0 0 6rem 0;
+        }
+
+        &__image {
+            width: 67rem;
+            height: 39rem;
+            margin: 0 0 6rem 0;
+
+            img {
+                width: 67rem;
+                height: 39rem;
+            }
+        }
+
+        &__socials {
+            margin: 0 0 10rem 0;
+            padding: 0 10.4rem;
+            justify-content: space-between;
+
+            &-item {
+                width: 8rem;
+                height: 8rem;
+
+                &:not(:last-child) {
+                    margin: 0;
+                }
+            }
+        }
+
+        &__controlls {
+            font-size: 2.8rem;
+            line-height: 3.6rem;
+            letter-spacing: 0.28rem;
+
+            &-prev,
+            &-next {
+                div {
+                    max-width: 20.4rem;
+                    text-align: center;
+                }
+            }
+
+            &-prev {
+                svg {
+                    margin: 0 2.4rem 0 0;
+                }
+            }
+
+            &-next {
+                svg {
+                    margin: 0 0 0 2.4rem;
+                }
+            }
+        }
+    }
+}

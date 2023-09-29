@@ -392,7 +392,347 @@ section {
   }
 }
 
+.article-header {
+  font-family: "Forum";
+  margin-bottom: 5rem;
+}
+.article-header__title {
+  color: #FFF;
+  font-size: 7rem;
+  line-height: 8.3rem;
+  text-transform: uppercase;
+  margin: 0 0 5rem 0;
+}
+.article-header__image {
+  width: 164rem;
+  height: 99rem;
+}
+.article-header__image img {
+  width: 164rem;
+  height: 99rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 48em) {
+  .article-header {
+    margin-bottom: 8rem;
+  }
+  .article-header__title {
+    font-size: 6rem;
+    line-height: 8.2rem;
+    margin: 0 0 8rem 0;
+  }
+  .article-header__image {
+    width: 67rem;
+    height: 39rem;
+  }
+  .article-header__image img {
+    width: 67rem;
+    height: 39rem;
+  }
+}
+
+.article-body {
+  font-family: "Forum";
+}
+.article-body__title {
+  font-size: 4rem;
+  line-height: 115%;
+  letter-spacing: 0.08rem;
+  text-transform: uppercase;
+  max-width: 89rem;
+  margin: 0 auto 4rem auto;
+}
+.article-body__text {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "Futura PT";
+  font-size: 1.9rem;
+  line-height: 2.6rem;
+  max-width: 89rem;
+  margin: 0 auto 10rem auto;
+}
+.article-body__text:nth-last-child(3) {
+  margin: 0 auto 4rem auto;
+}
+.article-body__images-row {
+  display: flex;
+  -moz-column-gap: 3rem;
+       column-gap: 3rem;
+  margin: 0 0 10rem 0;
+}
+.article-body__images-item {
+  width: 80.5rem;
+  height: 91rem;
+}
+.article-body__images-item img {
+  width: 80.5rem;
+  height: 91rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.article-body__subtitle {
+  font-size: 1.9rem;
+  line-height: 150%;
+  letter-spacing: 0.038rem;
+  text-transform: uppercase;
+  max-width: 89rem;
+  margin: 0 auto 5rem auto;
+}
+.article-body__image {
+  width: 89.3rem;
+  height: 38.9rem;
+  margin: 0 auto 5rem auto;
+}
+.article-body__image img {
+  width: 89.3rem;
+  height: 38.9rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.article-body__socials {
+  margin: 0 0 10rem 37.5rem;
+  display: flex;
+  align-items: center;
+}
+.article-body__socials-item {
+  width: 5.3rem;
+  height: 5.3rem;
+  border: 0.1rem solid #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.article-body__socials-item:not(:last-child) {
+  margin: 0 5rem 0 0;
+}
+.article-body__controlls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--ffffff, #FFF);
+  font-family: "Futura PT";
+  font-size: 1.5rem;
+  font-weight: 450;
+  line-height: 2.2rem;
+  letter-spacing: 0.24rem;
+  text-transform: uppercase;
+}
+.article-body__controlls-prev, .article-body__controlls-next {
+  display: flex;
+  align-items: center;
+}
+.article-body__controlls-prev div, .article-body__controlls-next div {
+  max-width: 13.7rem;
+}
+.article-body__controlls-prev:hover, .article-body__controlls-next:hover {
+  cursor: pointer;
+}
+.article-body__controlls-prev svg {
+  margin: 0 1.2rem 0 0;
+}
+.article-body__controlls-next svg {
+  margin: 0 0 0 1.2rem;
+}
+@media (max-width: 48em) {
+  .article-body {
+    margin: 0 0 24rem 0;
+  }
+  .article-body__title {
+    font-size: 4.4rem;
+    line-height: 118%;
+    margin: 0 0 6rem 0;
+  }
+  .article-body__text {
+    font-size: 3.2rem;
+    line-height: 4.4rem;
+    margin: 0 0 6rem 0;
+  }
+  .article-body__text:nth-child(4) {
+    margin: 0 0 11rem 0;
+  }
+  .article-body__text:nth-last-child(3) {
+    margin: 0 0 10rem 0;
+  }
+  .article-body__images-row {
+    -moz-column-gap: 4rem;
+         column-gap: 4rem;
+    margin: 0 0 7rem 0;
+  }
+  .article-body__images-item {
+    width: 31.6rem;
+    height: 36.2rem;
+  }
+  .article-body__images-item img {
+    width: 31.6rem;
+    height: 36.2rem;
+  }
+  .article-body__subtitle {
+    font-size: 2.8rem;
+    line-height: 4.4rem;
+    margin: 0 0 6rem 0;
+  }
+  .article-body__image {
+    width: 67rem;
+    height: 39rem;
+    margin: 0 0 6rem 0;
+  }
+  .article-body__image img {
+    width: 67rem;
+    height: 39rem;
+  }
+  .article-body__socials {
+    margin: 0 0 10rem 0;
+    padding: 0 10.4rem;
+    justify-content: space-between;
+  }
+  .article-body__socials-item {
+    width: 8rem;
+    height: 8rem;
+  }
+  .article-body__socials-item:not(:last-child) {
+    margin: 0;
+  }
+  .article-body__controlls {
+    font-size: 2.8rem;
+    line-height: 3.6rem;
+    letter-spacing: 0.28rem;
+  }
+  .article-body__controlls-prev div, .article-body__controlls-next div {
+    max-width: 20.4rem;
+    text-align: center;
+  }
+  .article-body__controlls-prev svg {
+    margin: 0 2.4rem 0 0;
+  }
+  .article-body__controlls-next svg {
+    margin: 0 0 0 2.4rem;
+  }
+}
+
+.article-similar {
+  font-family: "Forum";
+  margin: 0 0 19.6rem 0;
+}
+.article-similar__header {
+  margin: 0 0 5rem 0;
+}
+.article-similar__title {
+  font-size: 4rem;
+  line-height: 116%;
+  letter-spacing: 0.08rem;
+  text-transform: uppercase;
+  margin: 0 0 3rem 0;
+}
+.article-similar__controlls {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.article-similar__controlls .article-similar__swiper-button-prev:hover,
+.article-similar__controlls .article-similar__swiper-button-next:hover {
+  cursor: pointer;
+}
+.article-similar__controlls .article-similar__swiper-button-prev {
+  margin: 0 2rem 0 0;
+}
+.article-similar__item {
+  max-width: 38.9rem;
+}
+.article-similar__item-image {
+  width: 38.7rem;
+  height: 38.9rem;
+  margin: 0 0 2rem 0;
+}
+.article-similar__item-image img {
+  width: 38.7rem;
+  height: 38.9rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.article-similar__item-name {
+  font-size: 1.9rem;
+  line-height: 150%;
+  letter-spacing: 0.038rem;
+  text-transform: uppercase;
+  margin: 0 0 1rem 0;
+}
+.article-similar__item-descr {
+  display: flex;
+  flex-direction: column;
+  min-height: 15.9rem;
+}
+.article-similar__item-text {
+  font-family: "Futura PT";
+  font-size: 1.9rem;
+  line-height: 2.6rem;
+}
+.article-similar__item-more {
+  margin-top: auto;
+  justify-content: flex-end;
+}
+@media (max-width: 48em) {
+  .article-similar {
+    margin: 0 0 24rem 0;
+  }
+  .article-similar__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .article-similar__title {
+    font-size: 4.4rem;
+    line-height: 118%;
+    margin: 0;
+  }
+  .article-similar__controlls .article-similar__swiper-button-prev svg {
+    margin: 0 4.8rem 0 0;
+  }
+  .article-similar__controlls .article-similar__swiper-button-next svg,
+  .article-similar__controlls .article-similar__swiper-button-prev svg {
+    width: 4rem;
+  }
+  .article-similar__swiper-wrapper {
+    row-gap: 10rem;
+  }
+  .article-similar__item {
+    max-width: none;
+  }
+  .article-similar__item-image {
+    width: 67rem;
+    height: 65.4rem;
+    margin: 0 0 4rem 0;
+  }
+  .article-similar__item-image img {
+    width: 67rem;
+    height: 65.4rem;
+  }
+  .article-similar__item-name {
+    font-size: 2.8rem;
+    line-height: 4.4rem;
+    margin: 0 0 2.4rem 0;
+  }
+  .article-similar__item-descr {
+    min-height: 24rem;
+  }
+  .article-similar__item-text {
+    font-size: 3.2rem;
+    line-height: 4.4rem;
+  }
+}
+
 body {
   background-color: #090909;
   color: #fff;
+}
+
+.pages-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.5rem;
+  font-size: 3rem;
+  color: #090909;
+}
+.pages-container a {
+  display: block;
 }/*# sourceMappingURL=style.css.map */

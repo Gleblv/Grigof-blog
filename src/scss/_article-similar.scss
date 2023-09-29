@@ -1,0 +1,139 @@
+.article-similar {
+    font-family: 'Forum';
+    margin: 0 0 19.6rem 0;
+
+    &__header {
+        margin: 0 0 5rem 0;
+    }
+
+    &__title {
+        font-size: 4rem;
+        line-height: 116%;
+        letter-spacing: 0.08rem;
+        text-transform: uppercase;
+        margin: 0 0 3rem 0;
+    }
+
+    &__controlls {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        .article-similar__swiper-button-prev,
+        .article-similar__swiper-button-next {
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        .article-similar__swiper-button-prev {
+            margin: 0 2rem 0 0;
+        }
+    }
+
+    &__item {
+        max-width: 38.9rem;
+
+        &-image {
+            width: 38.7rem;
+            height: 38.9rem;
+            margin: 0 0 2rem 0;
+
+            img {
+                width: 38.7rem;
+                height: 38.9rem;
+                object-fit: cover;
+            }
+        }
+
+        &-name {
+            font-size: 1.9rem;
+            line-height: 150%;
+            letter-spacing: 0.038rem;
+            text-transform: uppercase;
+            margin: 0 0 1rem 0;
+        }
+
+        &-descr {
+            display: flex;
+            flex-direction: column;
+            min-height: 15.9rem;
+        }
+
+        &-text {
+            font-family: 'Futura PT';
+            font-size: 1.9rem;
+            line-height: 2.6rem;
+        }
+
+        &-more {
+            margin-top: auto;
+            justify-content: flex-end;
+        }
+    }
+
+    @media (max-width: 48em) {
+        margin: 0 0 24rem 0;
+
+        &__header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &__title {
+            font-size: 4.4rem;
+            line-height: 118%;
+            margin: 0;
+        }
+
+        &__controlls {
+            .article-similar__swiper-button-prev {
+                svg {
+                    margin: 0 4.8rem 0 0;
+                }
+            }
+
+            .article-similar__swiper-button-next,
+            .article-similar__swiper-button-prev {
+                svg {
+                    width: 4rem;
+                }
+            }
+        }
+
+        &__swiper-wrapper {
+            row-gap: 10rem;
+        }
+
+        &__item {
+            max-width: none;
+
+            &-image {
+                width: 67rem;
+                height: 65.4rem;
+                margin: 0 0 4rem 0;
+
+                img {
+                    width: 67rem;
+                    height: 65.4rem;
+                }
+            }
+
+            &-name {
+                font-size: 2.8rem;
+                line-height: 4.4rem;
+                margin: 0 0 2.4rem 0;
+            }
+
+            &-descr {
+                min-height: 24rem;
+            }
+
+            &-text {
+                font-size: 3.2rem;
+                line-height: 4.4rem;
+            }
+        }
+    }
+}
